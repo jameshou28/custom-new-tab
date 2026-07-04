@@ -27,6 +27,8 @@ jobs:
       - run: npm run build
         env:
           VITE_NASA_API_KEY: ${{ secrets.VITE_NASA_API_KEY }}
+          VITE_LATITUDE: ${{ secrets.VITE_LATITUDE }}
+          VITE_LONGITUDE: ${{ secrets.VITE_LONGITUDE }}
 
       - uses: actions/configure-pages@v4
 

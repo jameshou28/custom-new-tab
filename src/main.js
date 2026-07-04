@@ -75,6 +75,11 @@ function describeWeather(code) {
 
 // load weather based on lat and lon
 function loadWeather(lat, lon) {
+  if (lat == null || lon == null || lat === "" || lon === "") {
+    weatherTemp.innerHTML = "--°";
+    weatherCondition.innerHTML = "Unavailable";
+    return;
+  }
   fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,weather_code&temperature_unit=fahrenheit`)
     .then((response) => response.json())
     .then((data) => {

@@ -41,3 +41,15 @@ function update() {
 // run it once then run it every second
 update();
 setInterval(update, 1000);
+
+// google search stuff
+const searchInput = document.querySelector(".search input");
+
+searchInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    const query = searchInput.value.trim();
+    if (query !== "") {
+      window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+    }
+  }
+});

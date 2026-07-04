@@ -4,11 +4,11 @@ const date = document.querySelector(".date");
 
 function getGreeting(hours) {
   if (hours < 12) { // before 12:00
-    return "GOOD MORNING";
+    return "Good morning";
   } else if (hours < 18) {
-    return "GOOD AFTERNOON"; // 12:01 - 5:59
+    return "Good afternoon"; // 12:01 - 5:59
   } else {
-    return "GOOD EVENING"; // after 6:00
+    return "Good evening"; // after 6:00
   }
 }
 

@@ -3,22 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>custom-new-tab</title> <!--put your project title here. in my case, im calling it astronomy.-->
+    <title>custom-new-tab</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <div id="app">
       <div class="greeting">
         <p class="eyebrow">GOOD AFTERNOON</p>
         <h1 class="clock">2:58</h1>
-        <p class="date">James · Saturday, July 4</p>
+        <p class="date">James - Saturday, July 4</p>
       </div>
 
       <div class="weather">
-        <span class="weather-temp">--</span>
+        <span class="weather-temp">--°</span>
+        <span class="weather-condition">--</span>
       </div>
 
+      <div class="bottom">
       <div class="search">
-        <span class="search-icon">🔍</span>
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.5" y2="16.5"></line>
+        </svg>
         <input type="text" placeholder="Search Google" />
       </div>
 
@@ -47,6 +56,7 @@
           <span class="tile"></span>
           <span class="label">SHORTCUT</span>
         </a>
+      </div>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>

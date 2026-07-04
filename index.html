@@ -2,12 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>custom-new-tab</title>
+    <title>custom-new-tab</title> <!--put your project title here. in my case, im calling it astronomy.-->
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="greeting">
+        <p class="eyebrow">GOOD AFTERNOON</p>
+        <h1 class="clock">2:58</h1>
+        <p class="date">James · Saturday, July 4</p>
+      </div>
+
+      <div class="weather">
+        <span class="weather-temp">--</span>
+      </div>
+
+      <div class="search">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search Google" />
+      </div>
+
+      <div class="shortcuts">
+        <a class="shortcut" href="https://mail.google.com">
+          <span class="tile"><img src="/src/assets/icons/gmail.svg" alt="Gmail" /></span>
+          <span class="label">Gmail</span>
+        </a>
+        <a class="shortcut" href="https://drive.google.com">
+          <span class="tile"><img src="/src/assets/icons/drive.svg" alt="Drive" /></span>
+          <span class="label">Drive</span>
+        </a>
+        <a class="shortcut" href="https://github.com">
+          <span class="tile"><img src="/src/assets/icons/github.svg" alt="GitHub" /></span>
+          <span class="label">GitHub</span>
+        </a>
+        <a class="shortcut" href="https://claude.ai">
+          <span class="tile"><img src="/src/assets/icons/claude.svg" alt="Claude" /></span>
+          <span class="label">Claude</span>
+        </a>
+        <a class="shortcut" href="https://calendar.google.com">
+          <span class="tile"><img src="/src/assets/icons/calendar.svg" alt="Calendar" /></span>
+          <span class="label">Calendar</span>
+        </a>
+        <a class="shortcut" href="#">
+          <span class="tile"></span>
+          <span class="label">SHORTCUT</span>
+        </a>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

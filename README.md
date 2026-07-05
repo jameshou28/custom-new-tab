@@ -16,6 +16,6 @@ custom-new-tab/
     ├── style.css
     └── assets/
         ├── favicon.jpg
-        ├── bg.png          
+        ├── bg.jpg          
         └── icons/          
 ```

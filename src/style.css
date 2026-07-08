@@ -9,7 +9,7 @@ body {
   font-family: "Schibsted Grotesk", sans-serif;
   color: white;
   background-color: rgb(0, 0, 0);
-  background-image: url("/src/assets/bg.jpg");
+  background-image: url("https://user-cdn.hackclub-assets.com/019f43ac-26cd-7f7d-b3c5-02a0db572116/bg.jpg");
   background-size: cover;
   background-position: center;
 }

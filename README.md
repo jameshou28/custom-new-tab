@@ -41,3 +41,19 @@ Weather information comes from the OpenMeteo API.
 
 Deployment is a GitHub Actions workflow ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) that builds with Vite and publishes `dist/` to GitHub Pages on every push to `main`.
 
+
+## Repo structure
+
+```
+custom-new-tab/
+├── index.html             
+├── vite.config.js
+├── .env
+└── src/
+    ├── main.js             
+    ├── style.css
+    └── assets/
+        ├── favicon.jpg
+        ├── bg.jpg          
+        └── icons/          
+```
